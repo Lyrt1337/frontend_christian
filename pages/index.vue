@@ -2,9 +2,9 @@
   <!-- https://nuxt.com/docs/guide/directory-structure/pages -->
   <NuxtLayout name="default-layout">
     <!-- Komponente benötigt kein import in script. Wird automatisch von nuxt importiert -->
-    <header></header>
+    <header-example></header-example>
     <div class="global-css">
-      <div><NuxtLink to="/page/1">Page 1</NuxtLink></div>
+      <div><NuxtLink to="/test_page">Test Page</NuxtLink></div>
       <div><NuxtLink to="/page/2">Page 2</NuxtLink></div>
     </div>
     <UCard id="data-table-container">
