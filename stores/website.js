@@ -1,6 +1,6 @@
 import { defineStore } from 'pinia';
 import { ref } from 'vue';
-import { useSupabaseClient } from '@supabase/supabase-js';
+// import { useSupabaseClient } from '@supabase/supabase-js';
 
 export const useWebsiteStore = defineStore('websiteStore', () => {
   const tableData = ref([]);
