@@ -129,6 +129,8 @@
 
 #login_form .container {
   padding: 16px;
+  display: flex;
+  align-content: center;
 }
 
 #login_form span.psw {/*Passwort fergessen? Text*/
