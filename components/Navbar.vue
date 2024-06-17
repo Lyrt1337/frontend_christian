@@ -3,16 +3,18 @@
       <template #navbar>
         <div id="nav-inner-container">
           <!-- <h1>Welcome to FHGR Frontend Development Lectures</h1> -->
-            
-        <nav>
-            <ul id="nav_links">
-                <li><NuxtLink to="index.html">Übersicht</NuxtLink></li>
-                <li><NuxtLink to="index.html">Übersicht</NuxtLink></li>
-                <li><NuxtLink to="index.html">Übersicht</NuxtLink></li>
-                <li><NuxtLink to="index.html">Übersicht</NuxtLink></li>
-                <li><NuxtLink to="index.html">Übersicht</NuxtLink></li>
-            </ul>
-        </nav>
+        
+        <div>
+            <nav>
+                <ul id="nav_links">
+                    <li><NuxtLink to="/">Übersicht</NuxtLink></li>
+                    <li><NuxtLink to="/page/Städte Erkunden">Städte Erkunden</NuxtLink></li>
+                    <li><NuxtLink to="/page/Inserat Erstellen">Inserat Erstellen</NuxtLink></li>
+                    <li><NuxtLink to="/page/Info">Info</NuxtLink></li>
+                    <li><NuxtLink to="/page/Kontakt">Kontakt</NuxtLink></li>
+                </ul>
+            </nav>
+        </div>
             
         </div>
           <!-- <ColorScheme>
