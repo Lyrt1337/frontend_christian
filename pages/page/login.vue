@@ -6,9 +6,9 @@
     <div><h1>Login Page</h1></div>
     <body>
 
+    <UCard id="login_form">
+      <main>
 
-    <main>
-      <div class="login_form">
 
         <form action="/action_page.php" method="post">
           <div class="container_benutzerbild">
@@ -37,8 +37,9 @@
             <span class="psw"><a href="#">Password vergessen?</a></span>
           </div>
         </form>
-      </div>
-    </main>
+
+      </main>
+    </UCard>
 
     <footer>
       Student Homes<br>
@@ -75,4 +76,16 @@
     font-size: 20px;
     font-weight: bold;
   }
+
+  .login_form input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+
+  border-width:0px 0px 1px 0px;
+  border-style:solid;
+  border-color:var(--blue);
+
+  box-sizing: border-box;
+}
   </style>
