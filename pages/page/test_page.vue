@@ -3,7 +3,13 @@
       Page {{ route.params.id }}
     </div>
   </template>
+
+  <div>
+    <h1> This is a test </h1>
+    <h1>Welcome to FHGR Frontend Development Lectures</h1>
+  </div>
   
+
   <script setup lang="js">
   
   const route = useRoute()

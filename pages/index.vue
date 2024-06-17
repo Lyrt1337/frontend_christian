@@ -1,10 +1,10 @@
 <template>
   <!-- https://nuxt.com/docs/guide/directory-structure/pages -->
-  <NuxtLayout name="default-layout">
+  <NuxtLayout name="layout">
     <!-- Komponente benötigt kein import in script. Wird automatisch von nuxt importiert -->
     <header-example></header-example>
     <div class="global-css">
-      <div><NuxtLink to="/test_page">Test Page</NuxtLink></div>
+      <div><NuxtLink to="/page/test_page">Test Page</NuxtLink></div>
       <div><NuxtLink to="/page/2">Page 2</NuxtLink></div>
     </div>
     <UCard id="data-table-container">
