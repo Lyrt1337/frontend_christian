@@ -42,8 +42,8 @@
 
     <Footer></Footer>
 
-    <script type="module" src="supabase.js"></script>
-    <script type="module" src="scriptLogin.js"></script>
+    <script type="module" src="/supabase.js"></script>
+    <script type="module" src="/scriptLogin.js"></script>
 
     </body>
   </NuxtLayout>
