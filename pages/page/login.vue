@@ -92,6 +92,11 @@
 
 #login_form form {
   border: 3px solid #f1f1f1;
+  display: flex;
+  flex-direction: column; /* Elemente untereinander anordnen */
+  align-items: center; /* Horizontal zentrieren */
+  justify-content: center; /* Optional: Vertikal zentrieren */
+  height: 100%;
 }
 
 #login_form input[type=text], input[type=password] {
