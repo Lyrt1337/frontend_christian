@@ -1,6 +1,6 @@
 <template>
     <div>
-      Page {{ route.params.test_page }}
+      <!-- Page {{ route.params.test_page }} -->
       This is the test page
     </div>
     <header-example></header-example>
