@@ -1,6 +1,7 @@
 <template>
   <div id="route-id">
     Page {{ route.params.id }}
+    This is the first page
   </div>
   <header-example></header-example>
   <div><h1>First page</h1></div>
