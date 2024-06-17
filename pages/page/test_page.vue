@@ -4,6 +4,7 @@
         <!-- Page {{ route.params.test_page }} -->
         </div>
         <Header></Header>
+        <Navbar></Navbar>
         <div><h1>This is the test page</h1></div>
         <Footer></Footer>
     </NuxtLayout>

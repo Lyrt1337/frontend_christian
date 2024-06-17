@@ -32,7 +32,6 @@
           <div id="resultLogin" style="padding:20px;color:black"></div>
 
           <div class="container" style="background-color:#f1f1f1">
-            <button type="button" class="cancelbtn">Abbrechen</button>
             <span class="psw"><a href="#">Password vergessen?</a></span>
           </div>
         </form>
@@ -81,6 +80,7 @@
   align-items: center; /* Horizontal zentrieren */
   justify-content: center; /* Optional: Vertikal zentrieren */
   height: 100%;
+  width: 100%;
 }
 
 #login_form input[type=text], input[type=password] {
@@ -116,11 +116,11 @@
   opacity: 0.8;
 }
 
-#login_form .cancelbtn {
-  width: auto;/*Zuerucksetzen auf Standardwert*/
+/* #login_form .cancelbtn {
+  width: auto;
   padding: 10px 18px;
   background-color: #f44336;
-}
+} */
 
 #login_form .container_benutzerbild {
   text-align: center;/*https://www.freecodecamp.org/news/how-to-center-an-image-in-css/*/
@@ -129,8 +129,7 @@
 
 #login_form .container {
   padding: 16px;
-  display: flex;
-  align-content: center;
+
 }
 
 #login_form span.psw {/*Passwort fergessen? Text*/
@@ -140,7 +139,7 @@
 
 
 form label{
-  color:var(--blue);
+  color:green;
   font-weight: bold;
 }
   </style>

@@ -4,6 +4,7 @@
       <!-- Page {{ route.params.id }} -->
     </div>
     <Header></Header>
+    <Navbar></Navbar>
     <div>Page {{ route.params.id }}</div>
     <Footer></Footer>
   </NuxtLayout>
