@@ -16,8 +16,8 @@ export default defineNuxtConfig({
     googleFonts: {
         families: {
             // https://google-fonts.nuxtjs.org/getting-started/options#families
-            'Workbench': true,
-            Roboto: [100, 300],
+            'Roboto': true,
+            Lato: [100, 300],
         }
     },
     // Head Elemente welche über die ganze Applikation gültig sind können hier konfiguriert werden.
