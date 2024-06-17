@@ -1,7 +1,7 @@
 <template>
-    <UCard id="nav-container">
-      <template #navbar>
-        <div id="nav-inner-container">
+    <!-- <UCard id="nav-container"> -->
+      <!-- <template #navbar> -->
+        <!-- <div id="nav-inner-container"> -->
           <!-- <h1>Welcome to FHGR Frontend Development Lectures</h1> -->
         
 
@@ -15,20 +15,20 @@
             </ul>
         </nav>
       
-        </div>
-      </template>
+        <!-- </div> -->
+      <!-- </template> -->
 
-    </UCard>
-  </template>
+    <!-- </UCard> -->
+</template>
   
   <script setup lang="js">
   
   </script>
   
   <style scoped lang="css">
-  #nav-container {
+  /* #nav-container {
     margin-top: 32px;
-    }
+    } */
     
     #nav-inner-container {
         justify-content: right;
