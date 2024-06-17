@@ -3,7 +3,7 @@
       <!-- Page {{ route.params.test_page }} -->
     </div>
     <header-example></header-example>
-    <div><h1>This is the test page</h1></div>
+    <div><h1>Login Page</h1></div>
   </template>
   
   <script setup lang="js">
