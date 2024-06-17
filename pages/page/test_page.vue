@@ -3,8 +3,9 @@
         <div>
         <!-- Page {{ route.params.test_page }} -->
         </div>
-        <header-example></header-example>
+        <Header></Header>
         <div><h1>This is the test page</h1></div>
+        <Footer></Footer>
     </NuxtLayout>
   </template>
   

@@ -3,8 +3,7 @@
     <div>
       <!-- Page {{ route.params.test_page }} -->
     </div>
-    <header-example></header-example>
-    <div><h1>Login Page</h1></div>
+    <Header></Header>
     <body>
 
     <UCard id="login_form">
@@ -42,7 +41,7 @@
       </main>
     </UCard>
 
-    <footer></footer>
+    <Footer></Footer>
 
     <script type="module" src="supabase.js"></script>
     <script type="module" src="scriptLogin.js"></script>
@@ -75,18 +74,6 @@
     font-weight: bold;
   }
 
-  /* #login_form input[type=text], input[type=password] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-
-  border-width:0px 0px 1px 0px;
-  border-style:solid;
-  border-color:var(--blue);
-
-  box-sizing: border-box;
-} */
-
 
 #login_form form {
   border: 3px solid #f1f1f1;
@@ -98,7 +85,7 @@
 }
 
 #login_form input[type=text], input[type=password] {
-  width: 100%;
+  width: 50%;
   padding: 12px 20px;
   margin: 8px 0;
 

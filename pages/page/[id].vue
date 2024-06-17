@@ -3,8 +3,9 @@
     <div id="route-id">
       <!-- Page {{ route.params.id }} -->
     </div>
-    <header-example></header-example>
+    <Header></Header>
     <div>Page {{ route.params.id }}</div>
+    <Footer></Footer>
   </NuxtLayout>
 </template>
 

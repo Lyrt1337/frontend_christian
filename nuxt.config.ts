@@ -1,4 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import { defineNuxtConfig } from 'nuxt';
+
 export default defineNuxtConfig({
     devtools: {enabled: true},
     modules: ['@nuxt/ui', '@nuxtjs/supabase', '@pinia/nuxt', '@nuxtjs/google-fonts'],
@@ -15,7 +17,7 @@ export default defineNuxtConfig({
         families: {
             // https://google-fonts.nuxtjs.org/getting-started/options#families
             'Workbench': true,
-            Lato: [100, 300],
+            Roboto: [100, 300],
         }
     },
     // Head Elemente welche über die ganze Applikation gültig sind können hier konfiguriert werden.
