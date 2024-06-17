@@ -1,19 +1,25 @@
 <template>
-    <!-- <div id="route-id">
+    <div id="route-id">
       Page {{ route.params.id }}
-    </div> -->
+    </div>
+    <header-example></header-example>
+    <div><h1>This is another test</h1></div>
   </template>
-
-  <div>
-    <h1> This is a test </h1>
-    <h1>Welcome to FHGR Frontend Development Lectures</h1>
-  </div>
   
-
   <script setup lang="js">
   
   const route = useRoute()
   
+  // Wir können den head auch dynamisch anpassen für eine Seite
+  useHead({
+    title: 'My Page',
+    meta: [
+      {name: 'description', content: 'My amazing site.'}
+    ],
+    bodyAttrs: {
+      class: 'test'
+    },
+  })
   
   </script>
   
