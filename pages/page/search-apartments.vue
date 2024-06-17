@@ -9,34 +9,39 @@
           <li v-for="ad in ads" :key="ad.id">
             <h2>{{ ad.title }}</h2>
             <p>{{ ad.description }}</p>
-            <p>Preis: {{ ad.price }}€</p>
-            <p>Ort: {{ ad.location }}</p>
+            <p>Preis: {{ ad.price }}CHF</p>
+            <p>Adresse: {{ ad.adress }}</p>
+            <p>Stadt: {{ ad.city }}</p>
           </li>
         </ul>
       </div>
+
+      <UCard id="data-table-container">
+      <UTable id="data-table" :rows="store.tableData"/>
+      </UCard>
+
       <Footer></Footer>
     </div>
   </template>
   
   <script setup>
-  import { ref, onMounted } from 'vue';
-  import { useSupabaseClient } from '@supabase/supabase-js';
+  import { onMounted } from 'vue';
+  import { useWebsiteStore } from '~/stores/website.js';
   
-  const ads = ref([]);
-  const supabase = useSupabaseClient();
+  const store = useWebsiteStore();
   
-  const fetchAds = async () => {
-    const { data, error } = await supabase
-      .from('ads')
-      .select('*');
+  await callOnce(store.fetchData)
+
   
-    if (error) {
-      alert('Fehler beim Laden der Inserate: ' + error.message);
-    } else {
-      ads.value = data;
-    }
-  };
-  
-  onMounted(fetchAds);
   </script>
   
+  <style lang="css" scoped>
+
+  #data-table-container {
+    margin-top: 32px;
+  }
+
+  #data-table {
+    max-height: 500px;
+  }
+  </style>

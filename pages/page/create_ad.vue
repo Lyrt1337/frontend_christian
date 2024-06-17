@@ -17,8 +17,12 @@
           <input type="number" v-model="price" id="price" required>
         </div>
         <div>
-          <label for="location">Ort:</label>
-          <input type="text" v-model="location" id="location" required>
+          <label for="adress">Adresse:</label>
+          <input type="text" v-model="location" id="adress" required>
+        </div>
+        <div>
+          <label for="city">Stadt:</label>
+          <input type="text" v-model="location" id="city" required>
         </div>
         <button type="submit">Inserat erstellen</button>
       </form>
@@ -26,21 +30,23 @@
     </div>
   </template>
   
-  <script setup>
+  <script setup lang="js">
   import { ref } from 'vue';
-  import { useSupabaseClient } from '@supabase/supabase-js';
+  import { useWebsiteStore } from '~/stores/website.js';
   
   const title = ref('');
   const description = ref('');
   const price = ref('');
-  const location = ref('');
-  const supabase = useSupabaseClient();
+  const adress = ref('');
+  const city = ref('');
+
+  const store = useWebsiteStore();
   
   const createAd = async () => {
     const { data, error } = await supabase
       .from('ads')
       .insert([
-        { title: title.value, description: description.value, price: price.value, location: location.value }
+        { title: title.value, description: description.value, price: price.value, adress: adress.value, city: city.value }
       ]);
   
     if (error) {

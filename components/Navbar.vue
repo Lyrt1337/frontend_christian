@@ -8,8 +8,8 @@
         <nav>
             <ul class="nav_links">
                 <li><NuxtLink to="/">Übersicht</NuxtLink></li>
-                <li><NuxtLink to="/page/Städte Erkunden">Städte Erkunden</NuxtLink></li>
-                <li><NuxtLink to="/page/Inserat Erstellen">Inserat Erstellen</NuxtLink></li>
+                <li><NuxtLink to="/page/search-apartments">Wohnung Suchen</NuxtLink></li>
+                <li><NuxtLink to="/page/create_ad">Inserat Erstellen</NuxtLink></li>
                 <li><NuxtLink to="/page/Info">Info</NuxtLink></li>
                 <li><NuxtLink to="/page/Kontakt">Kontakt</NuxtLink></li>
             </ul>
