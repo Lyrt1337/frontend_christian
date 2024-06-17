@@ -23,9 +23,9 @@ await callOnce(store.fetchData)
 </script>
 
 
-<script setup lang="ts">
+<!-- <script setup lang="ts">
 const appConfig = useAppConfig()
-</script>
+</script> -->
 
 
 <style lang="css" scoped>
