@@ -2,7 +2,7 @@
   <UCard id="header-container">
     <template #header>
       <div id="header-inner-container">
-        <h1>Welcome to FHGR Frontend Development Lectures</h1>
+        <!-- <h1>Welcome to FHGR Frontend Development Lectures</h1> -->
           <div><NuxtLink to="/page/1">Page 1</NuxtLink>
             <img src="assets\img\home_logo_green.jpg" width="150px" height="150px" alt="Student Homes">
           </div>
