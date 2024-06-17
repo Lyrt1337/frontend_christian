@@ -1,4 +1,5 @@
 <template>
+  <NuxtLayout name="default-layout">
     <div>
       <!-- Page {{ route.params.test_page }} -->
     </div>
@@ -46,8 +47,9 @@
     <script type="module" src="supabase.js"></script>
     <script type="module" src="scriptLogin.js"></script>
 
-  </body>
-  </template>
+    </body>
+  </NuxtLayout>
+</template>
   
   <script setup lang="js">
   

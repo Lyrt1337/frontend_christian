@@ -35,12 +35,3 @@
     display: flex;
   }
   </style>
-
-
-
-
-<footer>
-    Student Homes<br>
-    <a href="mailto:christian.gilomen@stud.fhgr.ch" style="color:white">info@student.homes.fhgr.ch</a><br>
-    Tel. +41 81 123 45 67
-  </footer>
