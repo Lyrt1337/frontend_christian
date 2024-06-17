@@ -23,9 +23,9 @@ export const useWebsiteStore = defineStore('websiteStore', () => {
     const { data, error } = await client.from('Apartments')
       .select('*');
     if (data) {
-      ads.value = data;
+      Apartments.value = data;
     } else {
-      console.error('Error when fetching the ads:', error);
+      console.error('Error when fetching the Apartments:', error);
     }
   }
 
