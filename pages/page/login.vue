@@ -5,28 +5,7 @@
     <header-example></header-example>
     <div><h1>Login Page</h1></div>
     <body>
-    <header>
-        <div class="logo">
-            <a href="index.html">
-              <img src="img/home_logo_green.jpg" width="150px" height="150px" alt="Student Homes">
-            </a>
-        </div>
-        <div>
-          <a href="login.html">
-            <img src="img/login_gray.png" width="45px" height="45px">
-          </a>
-        </div>
-    </header>
-  
-    <nav>
-      <ul class="nav_links">
-        <li><a href="index.html">Übersicht</a></li>
-        <li><a href="staedte.html">Städte Erkunden</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="info.html">Info</a></li>
-        <li><a href="contact.html">Kontakt</a></li>
-      </ul>
-    </nav>
+
 
     <main>
       <div class="login_form">
