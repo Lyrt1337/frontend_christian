@@ -1,9 +1,11 @@
 <template>
-  <div id="route-id">
-    <!-- Page {{ route.params.id }} -->
-  </div>
-  <header-example></header-example>
-  <div>Page {{ route.params.id }}</div>
+  <NuxtLayout name="default-layout">
+    <div id="route-id">
+      <!-- Page {{ route.params.id }} -->
+    </div>
+    <header-example></header-example>
+    <div>Page {{ route.params.id }}</div>
+  </NuxtLayout>
 </template>
 
 <script setup lang="js">

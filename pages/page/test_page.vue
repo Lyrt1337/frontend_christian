@@ -1,9 +1,11 @@
 <template>
-    <div>
-      <!-- Page {{ route.params.test_page }} -->
-    </div>
-    <header-example></header-example>
-    <div><h1>This is the test page</h1></div>
+    <NuxtLayout name="default-layout">
+        <div>
+        <!-- Page {{ route.params.test_page }} -->
+        </div>
+        <header-example></header-example>
+        <div><h1>This is the test page</h1></div>
+    </NuxtLayout>
   </template>
   
   <script setup lang="js">

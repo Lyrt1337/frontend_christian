@@ -27,7 +27,14 @@
   
   <style scoped lang="css">
   #footer-container {
-    margin-top: 32px;
+    width: 100%;
+   background-color: var(--blue);
+   color: white;
+   text-align: center;
+
+   padding-top:10px;
+   padding-bottom:10px;
+   margin-top:10px;
   }
   
   #footer-inner-container {
