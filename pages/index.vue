@@ -1,6 +1,6 @@
 <template>
   <!-- https://nuxt.com/docs/guide/directory-structure/pages -->
-  <NuxtLayout name="layout">
+  <NuxtLayout name="default-layout">
     <!-- Komponente benötigt kein import in script. Wird automatisch von nuxt importiert -->
     <header-example></header-example>
     <div class="global-css">
