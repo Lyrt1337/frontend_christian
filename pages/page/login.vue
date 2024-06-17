@@ -5,11 +5,10 @@
     </div>
     <Header></Header>
     <body>
-
-    <UCard id="login_form">
       <main>
 
-
+      <UCard id="login_form">
+        
         <form action="/action_page.php" method="post">
           <div class="container_benutzerbild">
             <img src="assets\img\login_gray.png" width="250px" height="250px">
@@ -38,8 +37,8 @@
           </div>
         </form>
 
-      </main>
-    </UCard>
+      </UCard>
+    </main>
 
     <Footer></Footer>
 
@@ -85,13 +84,13 @@
 }
 
 #login_form input[type=text], input[type=password] {
-  width: 50%;
+  width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
 
   border-width:0px 0px 1px 0px;
   border-style:solid;
-  border-color:var(--blue);
+  border-color: green;
 
   box-sizing: border-box;
 }
@@ -101,7 +100,7 @@
 }
 
 #login_form button {
-  background-color: var(--blue);
+  background-color: green;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
