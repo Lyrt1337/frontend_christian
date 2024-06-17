@@ -11,7 +11,7 @@
     <UCard id="data-table-container">
       <UTable id="data-table" :rows="store.tableData"/>
     </UCard>
-    <footer></footer>
+    <Footer></Footer>
   </NuxtLayout>
 </template>
 
