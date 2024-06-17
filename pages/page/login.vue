@@ -12,7 +12,7 @@
 
         <form action="/action_page.php" method="post">
           <div class="container_benutzerbild">
-            <img src="img/login_gray.png" width="250px" height="250px">
+            <img src="assets\img\login_gray.png" width="250px" height="250px">
           </div>
 
           <div class="container">

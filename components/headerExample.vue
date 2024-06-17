@@ -6,7 +6,7 @@
           <div><NuxtLink to="index"><img src="assets\img\home_logo_green.jpg" width="150px" height="150px" alt="Student Homes"></NuxtLink>
             
           </div>
-          <div><NuxtLink to="/page/login"><img src="assets\img/login_gray.png" width="45px" height="45px"></NuxtLink>
+          <div><NuxtLink to="/page/login"><img src="assets\img\login_gray.png" width="45px" height="45px"></NuxtLink>
             
           </div>
         <!-- <ColorScheme>
