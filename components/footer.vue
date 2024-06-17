@@ -28,7 +28,7 @@
   <style scoped lang="css">
   #footer-container {
     width: 100%;
-   background-color: var(--blue);
+   background-color: green;
    color: white;
    text-align: center;
 

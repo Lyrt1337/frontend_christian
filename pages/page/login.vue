@@ -4,6 +4,7 @@
       <!-- Page {{ route.params.test_page }} -->
     </div>
     <Header></Header>
+    <Navbar></Navbar>
     <body>
       <main>
 

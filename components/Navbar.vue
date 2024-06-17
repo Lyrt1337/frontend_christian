@@ -30,7 +30,7 @@
     margin-top: 32px;
     } */
     
-    #nav-inner-container {
+    #nav {
         justify-content: right;
         display: flex;
     }

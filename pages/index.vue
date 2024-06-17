@@ -6,11 +6,6 @@
     <Header></Header>
     <Navbar></Navbar>
 
-    <div class="global-css">
-      <div><NuxtLink to="/page/1">Page 1</NuxtLink></div>
-      <div><NuxtLink to="/page/2">Page 2</NuxtLink></div>
-      <div><NuxtLink to="/page/test_page">Test Page</NuxtLink></div>
-    </div>
     <UCard id="data-table-container">
       <UTable id="data-table" :rows="store.tableData"/>
     </UCard>
