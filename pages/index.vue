@@ -22,6 +22,12 @@ await callOnce(store.fetchData)
 
 </script>
 
+
+<script setup lang="ts">
+const appConfig = useAppConfig()
+</script>
+
+
 <style lang="css" scoped>
 
 #data-table-container {

@@ -1,7 +1,7 @@
 <template>
-    <div id="route-id">
+    <!-- <div id="route-id">
       Page {{ route.params.id }}
-    </div>
+    </div> -->
   </template>
 
   <div>
