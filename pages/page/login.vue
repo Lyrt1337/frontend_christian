@@ -77,7 +77,7 @@
     font-weight: bold;
   }
 
-  #login_form input[type=text], input[type=password] {
+  /* #login_form input[type=text], input[type=password] {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -87,5 +87,69 @@
   border-color:var(--blue);
 
   box-sizing: border-box;
+} */
+
+
+#login_form form {
+  border: 3px solid #f1f1f1;
+}
+
+#login_form input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+
+  border-width:0px 0px 1px 0px;
+  border-style:solid;
+  border-color:var(--blue);
+
+  box-sizing: border-box;
+}
+
+#login_form input:focus{
+    outline: none;/*Damit kein orangener Rahmen angezeigt wird beim anclicken*/
+}
+
+#login_form button {
+  background-color: var(--blue);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+
+  border-radius:3px;
+}
+
+/*for both buttons in form*/
+#login_form button:hover {
+  opacity: 0.8;
+}
+
+#login_form .cancelbtn {
+  width: auto;/*Zuerucksetzen auf Standardwert*/
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+#login_form .container_benutzerbild {
+  text-align: center;/*https://www.freecodecamp.org/news/how-to-center-an-image-in-css/*/
+  margin: 0 0 -50px 0; /*0 is short form of "0 every_unit"*/
+}
+
+#login_form .container {
+  padding: 16px;
+}
+
+#login_form span.psw {/*Passwort fergessen? Text*/
+  float: right;
+  padding-top: 16px;
+}
+
+
+form label{
+  color:var(--blue);
+  font-weight: bold;
 }
   </style>
