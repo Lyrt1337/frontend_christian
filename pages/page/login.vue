@@ -77,7 +77,7 @@
     font-weight: bold;
   }
 
-  .login_form input[type=text], input[type=password] {
+  #login_form input[type=text], input[type=password] {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
