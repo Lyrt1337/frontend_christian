@@ -6,12 +6,12 @@
       <div v-if="ads.length === 0">Keine Inserate gefunden</div>
       <div v-else>
         <ul>
-          <li v-for="ad in ads" :key="ad.id">
-            <h2>{{ ad.title }}</h2>
-            <p>{{ ad.description }}</p>
-            <p>Preis: {{ ad.price }}CHF</p>
-            <p>Adresse: {{ ad.adress }}</p>
-            <p>Stadt: {{ ad.city }}</p>
+          <li v-for="Apartment in Apartments" :key="Apartments.id">
+            <h2>{{ Apartment.title }}</h2>
+            <p>{{ Apartment.description }}</p>
+            <p>Preis: {{ Apartment.price }}CHF</p>
+            <p>Adresse: {{ Apartment.adress }}</p>
+            <p>Stadt: {{ Apartment.city }}</p>
           </li>
         </ul>
       </div>
