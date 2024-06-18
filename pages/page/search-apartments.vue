@@ -3,7 +3,7 @@
         <Header></Header>
         <Navbar></Navbar>
       <h1>Wohnung Suchen</h1>
-      <div v-if="ads.length === 0">Keine Inserate gefunden</div>
+      <div v-if="Apartments.length === 0">Keine Inserate gefunden</div>
       <div v-else>
         <ul>
           <li v-for="Apartment in Apartments" :key="Apartments.id">
