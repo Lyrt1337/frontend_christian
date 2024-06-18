@@ -6,8 +6,7 @@ export default defineNuxtConfig({
         '@nuxt/ui',
         '@nuxtjs/supabase',
         '@pinia/nuxt',
-        '@nuxtjs/google-fonts',
-        '@nuxtjs/dotenv'
+        '@nuxtjs/google-fonts'
     ],
     css: ['~/assets/css/main.css'],
     supabase: {
