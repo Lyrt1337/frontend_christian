@@ -6,9 +6,9 @@
     <Header></Header>
     <Navbar></Navbar>
 
-    <UCard id="data-table-container">
+    <!-- <UCard id="data-table-container">
       <UTable id="data-table" :rows="store.tableData"/>
-    </UCard>
+    </UCard> -->
 
     <Footer></Footer>
 

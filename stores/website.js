@@ -4,7 +4,7 @@ import { ref } from 'vue';
 
 export const useWebsiteStore = defineStore('websiteStore', () => {
   const tableData = ref([]);
-  const Apartments = ref([]);
+  const apartments = ref([]);
 
   async function fetchData() {
     const client = useSupabaseClient();
