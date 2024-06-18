@@ -4,11 +4,11 @@ import { ref } from 'vue';
 
 export const useWebsiteStore = defineStore('websiteStore', () => {
   const tableData = ref([]);
-  const ads = ref([]);
+  const Apartments = ref([]);
 
   async function fetchData() {
     const client = useSupabaseClient();
-    const { data, error } = await client.from('data')
+    const { data, error } = await client.from('Apartments')
       .select('*')
       .limit(100);
     if (data) {
@@ -42,5 +42,5 @@ export const useWebsiteStore = defineStore('websiteStore', () => {
     }
   }
 
-  return { tableData, fetchData, ads, fetchAds, createAd };
+  return { tableData, fetchData, Apartments, fetchAds, createAd };
 });
