@@ -23,7 +23,7 @@ export const useWebsiteStore = defineStore('websiteStore', () => {
     const { data, error } = await client.from('Apartments')
       .select('*');
     if (data) {
-      Apartments.value = data;
+      apartments.value = data;
     } else {
       console.error('Error when fetching the Apartments:', error);
     }
@@ -42,5 +42,5 @@ export const useWebsiteStore = defineStore('websiteStore', () => {
     }
   }
 
-  return { tableData, fetchData, Apartments, fetchAds, createAd };
+  return { tableData, apartments, fetchData, fetchAds, createAd };
 });

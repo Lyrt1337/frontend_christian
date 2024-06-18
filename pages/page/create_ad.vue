@@ -5,7 +5,7 @@
       <h1>Inserat Erstellen</h1>
 
       <UCard id="create_form">
-        <form @submit.prevent="createAd">
+        <form @submit.prevent="createApartment">
             <div>
             <label for="title">Titel:</label>
             <input type="text" v-model="title" id="title" required>
@@ -45,9 +45,9 @@
 
   const store = useWebsiteStore();
   
-  const createAd = async () => {
+  const createApartment = async () => {
     const { data, error } = await supabase
-      .from('ads')
+      .from('Apartments')
       .insert([
         { title: title.value, description: description.value, price: price.value, adress: adress.value, city: city.value }
       ]);

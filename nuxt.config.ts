@@ -2,7 +2,13 @@
 
 export default defineNuxtConfig({
     devtools: {enabled: true},
-    modules: ['@nuxt/ui', '@nuxtjs/supabase', '@pinia/nuxt', '@nuxtjs/google-fonts'],
+    modules: [
+        '@nuxt/ui',
+        '@nuxtjs/supabase',
+        '@pinia/nuxt',
+        '@nuxtjs/google-fonts',
+        '@nuxtjs/dotenv'
+    ],
     css: ['~/assets/css/main.css'],
     supabase: {
         redirectOptions: {

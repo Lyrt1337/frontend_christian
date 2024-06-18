@@ -3,15 +3,15 @@
         <Header></Header>
         <Navbar></Navbar>
       <h1>Wohnung Suchen</h1>
-      <div v-if="Apartments.length === 0">Keine Inserate gefunden</div>
+      <div v-if="store.apartments.length === 0">Keine Inserate gefunden</div>
       <div v-else>
         <ul>
-          <li v-for="Apartment in Apartments" :key="Apartments.id">
-            <h2>{{ Apartment.title }}</h2>
-            <p>{{ Apartment.description }}</p>
-            <p>Preis: {{ Apartment.price }}CHF</p>
-            <p>Adresse: {{ Apartment.adress }}</p>
-            <p>Stadt: {{ Apartment.city }}</p>
+          <li v-for="apartment in store.apartments" :key="apartments.id">
+            <h2>{{ apartment.title }}</h2>
+            <p>{{ apartment.description }}</p>
+            <p>Preis: {{ apartment.price }}CHF</p>
+            <p>Adresse: {{ apartment.adress }}</p>
+            <p>Stadt: {{ apartment.city }}</p>
           </li>
         </ul>
       </div>
