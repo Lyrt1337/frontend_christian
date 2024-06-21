@@ -2,6 +2,12 @@ import { defineStore } from 'pinia';
 import { ref } from 'vue';
 // import { useSupabaseClient } from '@supabase/supabase-js';
 
+document.addEventListener('DOMContentLoaded', (event) => {
+  // Event listeners for the buttons
+  document.getElementById('loginButton').addEventListener('click', login);
+  document.getElementById('signupButton').addEventListener('click', signUp);
+});
+
 export const useWebsiteStore = defineStore('websiteStore', () => {
   const tableData = ref([]);
   const apartments = ref([]);
