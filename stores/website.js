@@ -5,6 +5,7 @@ import { ref } from 'vue';
 export const useWebsiteStore = defineStore('websiteStore', () => {
   const tableData = ref([]);
   const apartments = ref([]);
+  const user = useSupabaseUser();
 
   async function fetchData() {
     const client = useSupabaseClient();
@@ -42,5 +43,19 @@ export const useWebsiteStore = defineStore('websiteStore', () => {
     }
   }
 
-  return { tableData, apartments, fetchData, fetchAds, createAd };
+  async function signIn(email, password) {
+    const { error } = await client.auth.signIn({ email, password })
+    if (error) {
+      console.error('Error signing in:', error)
+    }
+  }
+
+  async function signOut() {
+    const { error } = await client.auth.signOut()
+    if (error) {
+      console.error('Error signing out:', error)
+    }
+  }
+
+  return { tableData, apartments, fetchData, fetchAds, createAd, signIn, signOut};
 });
