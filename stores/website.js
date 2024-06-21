@@ -50,12 +50,12 @@ export const useWebsiteStore = defineStore('websiteStore', () => {
     }
   }
 
-  async function signOut() {
-    const { error } = await client.auth.signOut()
+  async function signUp() {
+    const { error } = await client.auth.signUp()
     if (error) {
       console.error('Error signing out:', error)
     }
   }
 
-  return { tableData, apartments, fetchData, fetchAds, createAd, signIn, signOut};
+  return { tableData, apartments, fetchData, fetchAds, createAd, signIn, signUp};
 });

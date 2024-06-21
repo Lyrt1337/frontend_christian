@@ -10,7 +10,8 @@
 
       <UCard id="login_form">
         
-        <form action="/action_page.php" method="post">
+        <!-- <form action="/action_page.php" method="post"> -->
+        <form @submit.prevent="login">
           <div class="container_benutzerbild">
             <img src="assets\img\login_gray.png" width="250px" height="250px">
           </div>
@@ -42,16 +43,34 @@
 
     <Footer></Footer>
 
-    <script type="module" src="/supabase.js"></script>
-    <script type="module" src="/scriptLogin.js"></script>
+    <!-- <script type="module" src="/supabase.js"></script>
+    <script type="module" src="/scriptLogin.js"></script> -->
 
     </body>
   </NuxtLayout>
 </template>
   
   <script setup lang="js">
+
+  import { ref } from 'vue'
+  import { useWebsiteStore } from '~/stores/website.js'
   
   const route = useRoute()
+
+  const email = ref('')
+  const password = ref('')
+  const store = useWebsiteStore()
+
+  const login = async () => {
+  try {
+    await store.signIn(email.value, password.value)
+    alert('Erfolgreich eingeloggt')
+    this.$router.push('/')
+  } catch (error) {
+    console.error('Login failed:', error)
+    alert('Login fehlgeschlagen')
+  }
+}
   
   // Wir können den head auch dynamisch anpassen für eine Seite
   useHead({
