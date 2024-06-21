@@ -11,8 +11,8 @@
             <input type="text" v-model="title" id="title" required>
             </div>
             <div>
-            <label for="description">Beschreibung:</label>
-            <textarea v-model="description" id="description" required></textarea>
+            <label for="description">Beschreibung:</label><br>
+            <textarea v-model="description" id="description" required cols="30"></textarea>
             </div>
             <div>
             <label for="price">Preis:</label>
@@ -88,6 +88,18 @@ border-style:solid;
 border-color: green;
 
 box-sizing: border-box;
+}
+
+#login_form button {
+  background-color: green;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+
+  border-radius:3px;
 }
 
 </style>

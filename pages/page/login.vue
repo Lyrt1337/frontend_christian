@@ -63,7 +63,7 @@
 
   const login = async () => {
   try {
-    await store.signIn(email.value, password.value)
+    await store.login(email.value, password.value)
     alert('Erfolgreich eingeloggt')
     this.$router.push('/')
   } catch (error) {
